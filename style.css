@@ -26,9 +26,11 @@ html{
     color: #E5E5E5;
 }
 
+/* NOT NECESSARY WITH NEW COOLER NAV UNDERLINE :D 
 .navbutton:hover{
     text-decoration: underline;
 }
+*/
 /*
     Header
 */
@@ -202,4 +204,120 @@ Information Subcontainer
 .info a {
     text-decoration: none;
     color: black;
+}
+
+
+/* 
+====================================
+=    BEGINNING OF PROJECTS HTML    =
+====================================
+*/
+
+.projects-title {
+    color: #FCA311;
+    font-size: 75px;
+    margin: 40px;
+    margin-left: 10%;
+}
+
+.container {
+    width: 65%;
+    max-width: 1200px;
+    /* border: 1px solid white; */
+
+    /* margin top/bottom = 0 | margin left/right = auto */
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* best way to horizontally center */
+    justify-content: space-evenly;
+}
+
+.card-container {
+    width: 30%;
+    min-width: 350px;
+    margin: 1%;
+}
+
+.card {
+    height: 95%;
+
+    background-color: white;
+    border-radius: 12px;
+
+    /* leave more space from text & images */
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+
+    /* keeps the object's aspect ration while trying to fill the whole space for it */
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.project-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.project-description {
+    margin: 10px;
+}
+
+.card a {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #E5E5E5;
+    border: 2px solid grey;
+    color: black;
+    text-decoration: none;
+
+    border-radius: 20px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 18px; 
+}
+
+
+/* 
+=========================================
+=    BEGINNING OF COOL NAV UNDERLINE    =
+=========================================
+*/
+
+hr {
+    width: 18%;
+    height: 18%;
+
+    background-color: #FCA311;
+    border: none;
+
+    /* reset the margins then only put on left through JS */
+    margin: 0;
+
+    transition: .3s ease-in-out;
+}
+
+#homebutton:hover ~ hr {
+    width: 18% !important;
+    margin-left: 1.2% !important;
+}
+
+#projectsbutton:hover ~ hr {
+    width: 24.5% !important;
+    margin-left: 31% !important;
+}
+
+#contactbutton:hover ~ hr {
+    width: 23.8% !important;
+    margin-left: 67.2% !important;
 }
