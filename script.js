@@ -1,3 +1,6 @@
+// gets the first <hr> element.
+// you can do .hr for an element that has "hr" class
+// or #hr for an element that has "hr" id
 const nav_underline = document.querySelector('hr');
 
 if (window.location.pathname == "/index.html" || window.location.pathname == "/")
