@@ -294,35 +294,19 @@ img {
 =========================================
 */
 
-/* 
- Navbar underline
-*/
 hr {
-    /* basic width and height (default) */
     width: 18%;
     height: 18%;
 
     background-color: #FCA311;
     border: none;
 
-    /* reset the margins (we will change the margin-left through JS)*/
+    /* reset the margins then only put on left through JS */
     margin: 0;
 
-    /* 
-    https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed
-    in 300 milliseconds come in and come out slowly 
-    */
     transition: .3s ease-in-out;
 }
 
-/*
-    this changes the position of hr based on hover 
-    also, we need the !important to override the Javascript.
-    "!important" basically makes it so that this property has higher prescendence (more important) than anything else (ex. Javascript).
-
-    also, the "~" just stands for direct sibling,
-    so the element that has the id "homebutton" must be a direct sibling of the <hr> element
-*/
 #homebutton:hover ~ hr {
     width: 18% !important;
     margin-left: 1.2% !important;
